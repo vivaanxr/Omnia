@@ -17,6 +17,17 @@ const Home= ({navigation}) => {
 
 ]
 
+function makeid(length) {
+  var result           = '';
+  var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  var charactersLength = characters.length;
+  for ( var i = 0; i < length; i++ ) {
+     result += characters.charAt(Math.floor(Math.random() * charactersLength));
+  }
+  return result;
+}
+
+
 Jobs=[{Name:"Take Parcel to the post office",JobDescription:"I don't have access to a car and could use someone's help taking my parcel to the post office!",Driver:"John Smith",Category:"Post Ofiice"
 },{Name:"Pick up dry-cleaning",JobDescription:"I have dry cleaning to pick up or an event tonight but I'm running short on time and need to get ready. Required: Someone to pick up my dry cleaning.",Driver:"Jane Doe",Category:"Dry cleaning"
 },{Name:"Shopping Spree!",JobDescription:"Unfortunately don't have access to a car but have a list of items from a clothing shop that aren't available online. Could use someone's help to pick up the items for me!",Driver:"Mike Jones",Category:"Post Ofiice"
@@ -48,7 +59,7 @@ Jobs=[{Name:"Take Parcel to the post office",JobDescription:"I don't have access
 
       <Text style={{fontSize:20,paddingTop:30,paddingLeft:15,paddingBottom:15,fontWeight:'bold'}}>Create Job</Text>
       <FlatList
-      keyExtractor={filterArray => filterArray.Name}
+      keyExtractor={()=>makeid(5)}
       data={filterArray}
       horizontal={true}
       renderItem={({ item }) => {
