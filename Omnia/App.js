@@ -22,10 +22,53 @@ function LogoTitle() {
   );
 }
 
-function Main() {
+export default function App() {
   return (
-    <Tab.Navigator>
-      <Tab.Screen
+    <NavigationContainer>
+      <Stack.Navigator>
+      <Stack.Screen
+        name="LoginScreen"
+        component={LoginScreen}
+        options={{
+          headerTitle: (props) => <LogoTitle {...props} />,
+          headerStyle: {
+            height: 120,
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}
+      />
+        <Stack.Screen
+        name="RegistrationScreen"
+        component={RegistrationScreen}
+        options={{
+          headerTitle: (props) => <LogoTitle {...props} />,
+          headerStyle: {
+            height: 120,
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}
+      />
+        <Stack.Screen
+        name="Choice"
+        component={Choice}
+        options={{
+          headerTitle: (props) => <LogoTitle {...props} />,
+          headerStyle: {
+            height: 120,
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}
+      />
+      <Stack.Screen
         name="Home"
         component={Home}
         options={{
@@ -39,36 +82,20 @@ function Main() {
           },
         }}
       />
-      <Tab.Screen name="Job" component={Job} />
-      <Tab.Screen name="SettingsPage" component={SettingsPage} />
-    </Tab.Navigator>
-  );
-}
-
-export default function App() {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="LoginScreen" component={LoginScreen} />
-        <Stack.Screen
-          name="RegistrationScreen"
-          component={RegistrationScreen}
-        />
-        <Stack.Screen name="Choice" component={Choice} />
-        <Stack.Screen
-          name="Main"
-          component={Main}
-          options={{
-            headerTitle: (props) => <LogoTitle {...props} />,
-            headerStyle: {
-              height: 120,
-            },
-            headerTintColor: '#fff',
-            headerTitleStyle: {
-              fontWeight: 'bold',
-            },
-          }}
-        />
+      <Stack.Screen
+        name="Job"
+        component={Job}
+        options={{
+          headerTitle: (props) => <LogoTitle {...props} />,
+          headerStyle: {
+            height: 120,
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}
+      />
       </Stack.Navigator>
     </NavigationContainer>
   );

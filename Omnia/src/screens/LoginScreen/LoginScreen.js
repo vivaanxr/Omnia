@@ -12,7 +12,7 @@ export default function LoginScreen({navigation}) {
     }
 
     const onLoginPress = () => {
-        navigation.navigate('Choice')
+        navigation.navigate('Home')
     }
 
     return (
