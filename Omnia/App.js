@@ -6,7 +6,6 @@ import Home from './src/screens/Home.js';
 import Job from './src/screens/Job.js';
 import LoginScreen from './src/screens/LoginScreen/LoginScreen.js';
 import RegistrationScreen from './src/screens/RegistrationScreen/RegistrationScreen.js';
-import SettingsPage from './src/screens/SettingsPage.js';
 import Choice from './src/screens/choice.js';
 import {Image} from 'react-native';
 
