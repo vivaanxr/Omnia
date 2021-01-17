@@ -25,7 +25,7 @@ Jobs=[{Name:"Take Parcel to the post office",JobDescription:"I don't have access
   return (
     <>
       <KeyboardAwareScrollView
-      style={{backgroundColor: "#E6E6FA"}}
+      // style={{backgroundColor: "#E6E6FA"}}
       >
 
       <View style={{width:"100%",height:3,backgroundColor:"#ededed"}}/>
@@ -46,21 +46,21 @@ Jobs=[{Name:"Take Parcel to the post office",JobDescription:"I don't have access
 
       <View style={{width:"100%",height:3,backgroundColor:"#ededed",lineHeight:1}}/>
 
-      <Text style={{fontSize:20,paddingTop:30,paddingLeft:15,paddingBottom:15}}>Create Job</Text>
+      <Text style={{fontSize:20,paddingTop:30,paddingLeft:15,paddingBottom:15,fontWeight:'bold'}}>Create Job</Text>
       <FlatList
       keyExtractor={filterArray => filterArray.Name}
       data={filterArray}
       horizontal={true}
       renderItem={({ item }) => {
         return (
-          <TouchableOpacity style={{borderWidth:1,borderColor:"black",padding:30,height:150,backgroundColor:"#d0b4dc",borderRadius:5}} onPress={()=>navigation.navigate("Job")}>
+          <TouchableOpacity style={{borderWidth:1,borderColor:"black",padding:30,height:150,backgroundColor:"#E6E6FA",borderRadius:5}} onPress={()=>navigation.navigate("Job")}>
             <Image source={item.source} style={{resizeMode:'contain',width: (Dimensions.get('screen').width) / 3,height:70,marginBottom:15}}/>
             <Text style={{textAlign:'center',fontSize:20,width:"100%"}}>{item.Name}</Text>
           </TouchableOpacity>
         );
       }}
     />
-  <Text style={{fontSize:20,paddingTop:30,paddingLeft:15,paddingBottom:15}}>Past Jobs</Text>
+  <Text style={{fontSize:20,paddingTop:30,paddingLeft:15,paddingBottom:15,fontWeight:"bold"}}>Past Jobs</Text>
 
   <FlatList
       keyExtractor={Jobs => Jobs.Name}
@@ -87,8 +87,6 @@ Jobs=[{Name:"Take Parcel to the post office",JobDescription:"I don't have access
   );
 };
 
-const styles = StyleSheet.create({
-});
 
 export default Home;
 

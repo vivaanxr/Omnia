@@ -29,30 +29,10 @@ export default function App() {
       <Stack.Screen
         name="LoginScreen"
         component={LoginScreen}
-        options={{
-          headerTitle: (props) => <LogoTitle {...props} />,
-          headerStyle: {
-            height: 120,
-          },
-          headerTintColor: '#fff',
-          headerTitleStyle: {
-            fontWeight: 'bold',
-          },
-        }}
       />
         <Stack.Screen
         name="RegistrationScreen"
         component={RegistrationScreen}
-        options={{
-          headerTitle: (props) => <LogoTitle {...props} />,
-          headerStyle: {
-            height: 120,
-          },
-          headerTintColor: '#fff',
-          headerTitleStyle: {
-            fontWeight: 'bold',
-          },
-        }}
       />
         <Stack.Screen
         name="Choice"

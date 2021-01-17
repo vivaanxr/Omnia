@@ -6,7 +6,8 @@ export default StyleSheet.create({
         alignItems: 'center'
     },
     title: {
-
+        fontSize:20,
+        padding:10
     },
     logo: {
         flex: 1,
@@ -22,8 +23,8 @@ export default StyleSheet.create({
         backgroundColor: 'white',
         marginTop: 10,
         marginBottom: 10,
-        marginLeft: 30,
-        marginRight: 30,
+        marginLeft: 5,
+        marginRight: 5,
         paddingLeft: 16
     },
     button: {

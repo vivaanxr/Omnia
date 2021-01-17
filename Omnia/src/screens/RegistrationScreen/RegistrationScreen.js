@@ -20,9 +20,12 @@ export default function RegistrationScreen({navigation}) {
     return (
         <View style={styles.container}>
             <KeyboardAwareScrollView
-                style={{ flex: 1, width: '100%' }}
+                style={{ flex: 1, width: '100%',paddingTop:100 }}
                 keyboardShouldPersistTaps="always">
                 
+                <Image source={require("../../../assets/OmniaLogoWhite.png")} style={{height:100,width:100,alignSelf:'center',resizeMode:'contain',marginBottom:60}}/>
+
+
                 <TextInput
                     style={styles.input}
                     placeholder='Full Name'

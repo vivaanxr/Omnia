@@ -43,8 +43,7 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         width:"98%",
         alignSelf:'center',
-        backgroundColor:"#d0b4dc"
-    },
+        backgroundColor:"#E6E6FA"},
     headingView:{
         justifyContent:'space-between',
         flexDirection:'row',
@@ -59,7 +58,6 @@ const styles = StyleSheet.create({
       lineHeight:30
   },
     JobDescription:{
-      backgroundColor:"#d0b4dc",
       width:"95%",
       alignSelf:'center'
   },

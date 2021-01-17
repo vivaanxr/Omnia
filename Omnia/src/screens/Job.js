@@ -10,7 +10,7 @@ const Job= ({navigation}) => {
   return (
     
       <KeyboardAwareScrollView>
-        <Text style={{fontSize:12}}>Job Title</Text>
+        <Text style={styles.title}>Job Title</Text>
         
         <TextInput
         style = {styles.input}
@@ -22,7 +22,7 @@ const Job= ({navigation}) => {
         autoCapitalize="none"
         />
     
-        <Text style={{fontSize:12}}>Job Description</Text>
+        <Text style={styles.title}>Job Description</Text>
         <TextInput
         style={styles.input}
         placeholder= 'Description'
@@ -32,43 +32,43 @@ const Job= ({navigation}) => {
         underlineColorAndroid="transparent"
         autoCapitalize="none"
         />
-        
-        <Text style ={{fontSize:12}}>Application Deadline</Text>
 
+          <Text style={styles.title}>Day</Text>
+        
             <TextInput
               style={styles.input}
               placeholder= 'Day'
               placeholderTextColor= '#aaaaa'
             />
-            <Text style={{fontSize:10}}>Day</Text>
+
+              <Text style={styles.title}>Month</Text>
 
             <TextInput
               style={styles.input}
               placeholder='Month'
               placeholderTextColor='#aaaaa'
             />
-            <Text style={{fontSize:10}}>Month</Text>
+          
+          <Text style={styles.title}>Year</Text>
 
             <TextInput
               style={styles.input}
               placeholder='Year'
               placeholderTextColor='#aaaaa'
             />
-            <Text style={{fontSize:10}}>Year</Text>
 
-        
-            <View style={{ flexDirection:"row" }}>
-    <View >
-        <Button title="Submit" style={styles.button}
-        onPress={()=>navigation.navigate("Home")}
-        >Submit</Button>
-    </View>
-    <View >
+        <Text>{"\n"}</Text>
+
+            <View style={{ flexDirection:"row",justifyContent:'space-around'}}>
+
         <Button title="Cancel" style={styles.button}
         onPress={()=>navigation.navigate("Home")}
         >Cancel</Button>
-    </View>
-</View>
+        <Button title="Submit" style={styles.button}
+        onPress={()=>navigation.navigate("Home")}
+        >Submit</Button>
+        
+          </View>
 
         </KeyboardAwareScrollView>
 
