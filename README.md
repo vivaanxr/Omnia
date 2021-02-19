@@ -27,16 +27,5 @@ be able to have their tasks done stress-free!
 And for those looking to make extra money in this diffuclt time, Omnia allows you to make money while completing errands. Already on your way to the post ofice and see 
 someone who need a task at the post office completed? You can accept the job and make money - no extra trips required, you basically get your gas covered! 
 
-----
 
-## Installation 
-
-
-## Troubleshooting 
-
-
-## Tech Stack
- 
- 
- ## Contact us:
  
